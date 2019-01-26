@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manoloreche.myapplication.RoomsDetailFragment"
+    android:padding="@dimen/activity_horizontal_margin">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accesible por"
+        android:textColor="?colorPrimary"
+        android:layout_below="@+id/tv_pertenece_edificio"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Pertenece a"
+        android:textColor="?colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_room_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:text="Sala 1"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/tv_pertenece_edificio" />
+
+    <TextView
+        android:id="@+id/tv_pertenece_edificio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:text="Edificio"
+        android:layout_below="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_room_name"
+        android:layout_marginTop="15dp"
+        android:text="Material Disponible"
+        android:textColor="?colorPrimary"/>
+
+    <TextView
+        android:id="@+id/tv_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_room_name"
+        android:layout_below="@+id/textView"
+        android:text="Personal Computer "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+
+</RelativeLayout>

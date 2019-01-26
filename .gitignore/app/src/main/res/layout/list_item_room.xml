@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?listPreferredItemHeight"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/tv_name_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:textAppearance="?textAppearanceListItem"
+        tools:text="Nom sala"
+        android:layout_marginStart="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/nom_sala_string" />
+
+    <TextView
+        android:id="@+id/nom_sala_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?textAppearanceListItem"
+        android:text="@string/room_name_is"
+        android:layout_alignBottom="@+id/tv_name_room"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp" />
+
+    <TextView
+        android:id="@+id/pertany_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/belongs_to"
+        android:textAppearance="?textAppearanceListItem"
+        android:layout_below="@+id/nom_sala_string"
+        android:layout_alignStart="@+id/nom_sala_string"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/tv_pertany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pertany"
+        android:textAppearance="?textAppearanceListItem"
+        android:layout_alignBottom="@+id/pertany_string"
+        android:layout_alignStart="@+id/tv_name_room" />
+
+</RelativeLayout>

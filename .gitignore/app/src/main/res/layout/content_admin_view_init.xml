@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.manoloreche.myapplication.AdminViewInit"
+    tools:showIn="@layout/activity_admin_view_init">
+
+
+
+    <Button
+        android:id="@+id/manage_rooms"
+        android:layout_width="153dp"
+        android:layout_height="53dp"
+        android:text="Manage Rooms"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+    <Button
+        android:id="@+id/manage_users"
+        android:layout_width="153dp"
+        android:layout_height="53dp"
+        android:text="Manage Users"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="74dp"
+        android:layout_below="@+id/manage_rooms"
+        android:layout_alignStart="@+id/manage_rooms"
+        android:layout_marginTop="21dp" />
+    <Button
+        android:id="@+id/button_historical"
+        android:layout_width="153dp"
+        android:layout_height="53dp"
+        android:text="@string/see_historical"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="74dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/manage_users" />
+
+</RelativeLayout>
